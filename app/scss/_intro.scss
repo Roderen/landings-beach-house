@@ -1,0 +1,281 @@
+.section-intro {
+  background-image: url('../images/intro-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  max-height: 800px;
+  height: 100%;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 128px;
+}
+
+.intro__location {
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-right: 15px;
+  }
+
+  span {
+    color: #fcf3e8;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.55;
+    font-weight: 300;
+
+    @include _375 {
+      font-size: 14px;
+    }
+  }
+}
+
+.intro__title {
+  width: 900px;
+  margin-top: 20px;
+  text-align: center;
+  color: #fcf3e8;
+  font-size: 130px;
+  font-family: 'Cormorant', sans-serif;
+  line-height: 1;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  @include _1024 {
+    width: auto;
+    font-size: 90px;
+  }
+
+  @include _560 {
+    font-size: 60px;
+  }
+
+  @include _430 {
+    font-size: 48px;
+  }
+
+  @include _375 {
+    font-size: 42px;
+  }
+}
+
+.intro__more {
+  cursor: pointer;
+  margin-top: 30px;
+  padding: 15px 35px;
+  border-radius: 50px;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.6);
+
+  @media screen and (min-width: 1024px) {
+    &:hover>.intro__more-button:before {
+      transform: scale(1.5) translateY(-30%);
+    }
+  }
+}
+
+.intro__more-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    background-color: #b89e89;
+    border-radius: 50%;
+    z-index: -1;
+
+    transition: 0.2s linear;
+
+    @include _560 {
+      right: -30px;
+    }
+
+    @include _360 {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  span {
+    margin-right: 25px;
+    color: #7c6048;
+    font-size: 30px;
+    font-family: 'Cormorant', sans-serif;
+    line-height: 1.55;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    @include _560 {
+      font-size: 22px;
+    }
+
+    @include _360 {
+      font-size: 18px;
+    }
+  }
+}
+
+.intro__info {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  box-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+
+  @include _1024 {
+    align-items: stretch;
+  }
+
+  @include _768 {
+    box-shadow: none;
+    margin-top: 200px;
+  }
+
+  @include _560 {
+    flex-direction: column;
+    margin-top: 70px;
+  }
+}
+
+.intro__info-left {
+  background-color: #B89E89;
+  width: 30%;
+  padding: 55px 20px;
+  min-height: 150px;
+  text-align: center;
+  border-radius: 40px 0 0 40px;
+
+  img {
+    @include _360 {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @include _1024 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  @include _768 {
+    display: none;
+  }
+
+  @include _560 {
+    display: flex;
+    width: calc(100% - 40px);
+    border-radius: 40px 40px 0 0;
+    padding: 20px 20px;
+  }
+}
+
+.intro__info-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 70%;
+  padding: 55px 20px;
+  min-height: 150px;
+  background-color: #fff;
+  border-radius: 0 40px 40px 0;
+
+  @include _1024 {
+    padding: 30px 20px;
+  }
+
+  @include _768 {
+    border-radius: 40px;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  @include _560 {
+    width: calc(100% - 40px);
+    border-radius: 0 0 40px 40px;
+    padding: 20px 20px;
+  }
+}
+
+.intro__info-list {
+  display: flex;
+  align-items: center;
+
+  @include _1024 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @include _430 {
+    flex-direction: column;
+  }
+
+  li {
+    margin-right: 55px;
+    text-align: center;
+
+    @include _1024 {
+      margin-right: 75px;
+    }
+
+    @include _560 {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    &:first-child {
+      @include _1024 {
+        margin-right: 0;
+        margin-bottom: 30px;
+        flex-basis: 100%;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+
+      @include _560 {
+        margin-bottom: 0;
+      }
+    }
+
+    div {
+      margin-bottom: 20px;
+      color: #b89e89;
+      font-size: 34px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+
+      @include _375 {
+        font-size: 26px;
+      }
+    }
+
+    span {
+      color: #494949;
+      font-size: 16px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+    }
+  }
+}

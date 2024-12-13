@@ -1,0 +1,144 @@
+.uniform__cards {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+
+  @include _1024 {
+    max-width: 950px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+}
+
+.uniform__card {
+  display: flex;
+  align-items: center;
+
+  &:nth-child(2n) {
+    flex-direction: row-reverse;
+
+    @include _768 {
+      flex-direction: column;
+    }
+
+    .uniform__card-images {
+      margin-right: 0;
+      margin-left: 100px;
+
+      @include _1024 {
+        margin-left: 40px;
+      }
+
+      @include _768 {
+        margin-left: 0;
+      }
+    }
+
+    .uniform__card-rotate-img {
+      left: inherit;
+      right: -300px;
+
+      @include _560 {
+        right: -100px;
+      }
+    }
+  }
+
+  @include _768 {
+    flex-direction: column;
+    margin-bottom: 80px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.uniform__card-images {
+  position: relative;
+  margin-right: 100px;
+
+  @include _1024 {
+    margin-right: 40px;
+  }
+  
+  @include _768 {
+    margin-right: 0;
+  }
+}
+
+.uniform__card-img {
+  @include _560 {
+    width: 60%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  @include _430 {
+    width: 80%;
+  }
+}
+
+.uniform__card-rotate-img {
+  position: absolute;
+  top: -150px;
+  left: -300px;
+  z-index: -1;
+  opacity: 0.06;
+  will-change: transform;
+
+  @include _560 {
+    width: 400px;
+    height: 400px;
+    top: -85px;
+    left: -100px;
+  }
+}
+
+.uniform__card-text {
+  text-align: center;
+
+  @include _768 {
+    margin-top: 40px;
+  }
+}
+
+.uniform__card-title {
+  color: #b89e89;
+  font-size: 70px;
+  font-family: 'Cormorant', sans-serif;
+  line-height: 1.10;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  @include _1024 {
+    font-size: 60px;
+  }
+
+  @include _560 {
+    font-size: 42px;
+  }
+
+  @include _430 {
+    font-size: 36px;
+  }
+}
+
+.uniform__card-subtitle {
+  margin-top: 20px;
+  color: #494949;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.60;
+  font-weight: 400;
+
+  @include _375 {
+    font-size: 14px;
+  }
+}
+
+.uniform__card-more {
+  margin: 0 auto;
+  margin-top: 60px;
+}

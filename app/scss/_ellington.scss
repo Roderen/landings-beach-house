@@ -1,0 +1,116 @@
+.section-ellington {
+  margin-top: 250px;
+  text-align: center;
+
+  @include _560 {
+    margin-top: 150px;
+  }
+
+  @include _430 {
+    margin-top: 200px;
+  }
+}
+
+.ellington {
+  position: relative;
+}
+
+.ellington__text {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.ellington__title {
+  color: #494949;
+  font-size: 80px;
+  font-family: 'Cormorant', sans-serif;
+  line-height: 1.10;
+  font-weight: 300;
+  text-transform: uppercase;
+
+  @include _768 {
+    font-size: 50px;
+  }
+
+  @include _560 {
+    font-size: 42px;
+  }
+
+  @include _430 {
+    font-size: 36px;
+  }
+
+  @include _375 {
+    font-size: 30px;
+  }
+}
+
+.ellington__img-text {
+  position: absolute;
+  top: 180px;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: -1;
+
+  @include _768 {
+    top: 100px;
+    width: 450px;
+  }
+
+  @include _560 {
+    top: 70px;
+  }
+
+  @include _430 {
+    width: 350px;
+    top: 50px;
+  }
+
+  @include _320 {
+    width: 250px;
+    top: 30px;
+  }
+}
+
+.ellington__subtitle {
+  margin-top: 80px;
+  color: #494949;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.60;
+  font-weight: 400;
+
+  @include _375 {
+    margin-top: 40px;
+    font-size: 14px;
+  }
+}
+
+.ellington__bg {
+  margin-top: 40px;
+  border-radius: 40px;
+  box-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+
+  @include _1024 {
+    width: 100%;
+  }
+
+  @include _768 {
+    height: 300px;
+    width: 80%;
+  }
+
+  @include _560 {
+    width: 100%;
+    height: 350px;
+  }
+
+  @include _430 {
+    height: 300px;
+  }
+
+  @include _320 {
+    height: 250px;
+  }
+}

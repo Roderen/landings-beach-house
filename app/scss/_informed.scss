@@ -1,0 +1,147 @@
+.section-informed {
+  margin-top: 200px;
+
+  @include _560 {
+    margin-top: 100px;
+  }
+}
+
+.informed {
+  background-color: #B89E89;
+  padding: 50px 60px;
+
+  @include _430 {
+    padding: 50px 30px;
+  }
+
+  @include _375 {
+    padding: 50px 20px;
+  }
+}
+
+.informed__top {
+  display: flex;
+  flex-direction: column;
+}
+
+.informed__top-descr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include _768 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.informed__title {
+  max-width: 435px;
+  margin-right: 20px;
+  color: #ffffff;
+  font-size: 70px;
+  font-family: 'Cormorant', sans-serif;
+  line-height: 1.2;
+  font-weight: 400;
+
+  @include _768 {
+    margin-right: 0;
+    max-width: 100%;
+    font-size: 50px;
+  }
+
+  @include _430 {
+    font-size: 40px;
+  }
+}
+
+.informed__descr {
+  max-width: 390px;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+
+  @include _768 {
+    margin-top: 30px;
+  }
+
+  p {
+    margin-top: 20px;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+}
+
+.informed__form {
+  margin-top: 30px;
+  display: flex;
+
+  @include _560 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.informed__form-input {
+  width: 300px;
+  margin-right: 20px;
+  outline: none;
+  color: #091435;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  border-radius: 30px;
+  font-family: 'Cormorant', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px 20px;
+
+  @include _560 {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  
+  @include _375 {
+    width: calc(100% - 20px);
+    max-width: 300px;
+  }
+}
+
+.informed__form-button {
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  border-radius: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  width: 330px;
+  padding: 15px 20px;
+
+  @include _768 {
+    font-size: 18px;
+  }
+
+  @include _375 {
+    width: 70%;
+    padding: 12px 15px;
+    font-size: 16px;
+  }
+}
+
+.informed__spam {
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  opacity: 0.6;
+
+  @include _560 {
+    text-align: center;
+  }
+}

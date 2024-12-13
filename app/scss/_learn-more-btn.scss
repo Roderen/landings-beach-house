@@ -1,0 +1,41 @@
+.learn-mone-btn {
+  cursor: pointer;
+  position: relative;
+  width: 90px;
+  text-align: center;
+  color: #7c6048;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.60;
+  font-weight: 400;
+
+  @include _375 {
+    font-size: 16px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-25deg);
+    width: 160px;
+    height: 100px;
+    border: 1px solid rgb(124, 96, 72);
+    border-radius: 50%;
+    transition: 0.2s linear;
+
+    @include _375 {
+      width: 140px;
+      height: 80px;
+    }
+  }
+
+  @media screen and (min-width: 1025px) {
+    &:hover.learn-mone-btn:before {
+      transform: translate(-50%, -50%);
+      width: 190px;
+      height: 110px;
+    }
+  }
+}

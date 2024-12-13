@@ -1,0 +1,161 @@
+.section-various {
+  margin-top: 200px;
+}
+
+.various__title {
+  text-align: center;
+  color: #494949;
+  font-size: 80px;
+  font-family: 'Cormorant', sans-serif;
+  line-height: 1.10;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  @include _1024 {
+    font-size: 60px;
+  }
+
+  @include _768 {
+    font-size: 50px;
+  }
+
+  @include _560 {
+    font-size: 40px;
+  }
+
+  @include _430 {
+    font-size: 34px;
+  }
+
+  @include _375 {
+    font-size: 30px;
+  }
+}
+
+.various__subtitle {
+  max-width: 685px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  color: #494949;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.60;
+  font-weight: 400;
+
+  @include _375 {
+    font-size: 14px;
+  }
+}
+
+.various__list {
+  margin-top: 50px;
+
+  @include _1024 {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  @include _560 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.various__list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+  border-top: 1px solid #c5c8cb;
+
+  &:last-child {
+    border-bottom: 1px solid #c5c8cb;
+  }
+
+  @include _768 {
+    align-items: flex-start;
+  }
+
+  @include _430 {
+    flex-direction: column;
+  }
+}
+
+.various__list-left {
+  margin-right: 30px;
+
+  @include _768 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+  }
+  @include _560 {
+    margin-right: 15px;
+  }
+
+  @include _430 {
+    width: 95%;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.various__list-num {
+  color: #494949;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.60;
+  font-weight: 400;
+
+  @include _768 {
+    font-size: 12px;
+  }
+
+  @include _430 {
+    font-size: 16px;
+  }
+}
+
+.various__list-title {
+  margin-top: 15px;
+  color: #7c6048;
+  font-size: 40px;
+  font-family: 'Cormorant', sans-serif;
+  line-height: 1.10;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  @include _768 {
+    font-size: 30px;
+    width: 235px;
+    margin-top: 0;
+    margin-right: 10px;
+  }
+  
+  @include _560 {
+    font-size: 24px;
+    width: 180px;
+  }
+
+  @include _430 {
+    width: 250px;
+  }
+}
+
+.various__list-right {
+  max-width: 700px;
+  color: #494949;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.60;
+  font-weight: 400;
+
+  @include _560 {
+    font-size: 14px;
+  }
+
+  @include _430 {
+    margin-top: 15px;
+  }
+}
